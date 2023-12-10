@@ -1,0 +1,3 @@
+[workspace]
+members = ["a_common_concepts", "b_guessing_game"]
+resolver = "1"
