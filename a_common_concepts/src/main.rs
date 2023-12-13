@@ -22,6 +22,10 @@ fn main() {
     - Shadowing ketika deklarasi variabel baru menggunakan 'let' maka akan dianggap sebagai variabel baru dan akan
     mengalokasikan alamat memory baru untuk menampung data variabel baru tersebut
     - Shadowing juga dapat digunakan pada variable dengan tipe data yang berbeda, jika menggunakan 'mut' tidak diperbolehkan menggubah tipe data
+
+    4. Data Types
+    - Rust mempunyai 2 jenis tipe data, scalar dan compund. Scalar menampung single value dan Compound dapat menampung multiple value
+    - Scalar : Integer, Floating Point, Boolean, Char | Compound : Array, Tuple
      */
 
     // VARIABLE AND MUTABILITY
@@ -75,4 +79,37 @@ fn main() {
     // let x = "5";
     // mutable tidak bisa beda tipe data, akan error
     //y = "5";
+
+    /* Scalar Data Types
+     1. Integer (Signed and Unsigned)
+     Signed integer adalah tipe data integer yang dapat menampung nilai positif dan juga negatif
+     Unsigned integer adalah tipe data integer yang hanya dapat menampung nilai positif
+     Integer mempunyai size dari 8, 16, 32, 64 dan 128 bit */
+    let numerik1 = 24;
+    let numerik2: i8 = -2;
+    println!("Signed : {} | {} ", numerik1, numerik2);
+
+    let numerik4: u16 = 4;
+    let numerik5: u64 = 56;
+    println!("Unsigned : {} | {}", numerik4, numerik5);
+
+    /* 2. Floating Point
+    Floating point adalah tipe data yang mendukung nilai di belakang koma. Mempunyai 2 size yaitu f32 dan f64 */
+    let fp1: f32 = 3.14;
+    let fp2: f64 = 3.1415926535;
+    // {:.n}, dimana n menetukan jumlah angka yang tambil di belakang koma
+    println!("Floating Point : {:.1} | {:.5}", fp1, fp2);
+
+    /* 3. Bool
+    Menerima 2 pilihan saja yaitu true or false */
+    let b1 = true;
+    let b2 = false;
+    println!("Bool : {} | {}", b1, b2);
+
+    /* 4. Char
+    Tipe data char menampung sebuah data(unicode), contohnya seperti 'n', '-', '2', '😻'*/
+    let c1 = 'z';
+    let c2: char = 'ℤ'; // with explicit type annotation
+    let c3 = '😻';
+    println!("Char : {} | {} | {}", c1, c2, c3);
 }
