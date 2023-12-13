@@ -20,12 +20,12 @@ fn main() {
 
         println!("Your guessed {}", guess);
 
-        let guess_str:u32 = match guess.trim().parse(){
+        let guess:u32 = match guess.trim().parse(){
             Ok(num) => num,
             Err(_) => continue,
         };
 
-        match guess_str.cmp(&secret_number){ // arm
+        match guess.cmp(&secret_number){ // arm
             Ordering::Less => println!("To small !!"),
             Ordering::Greater => println!("To big !!"),
             Ordering::Equal => {
