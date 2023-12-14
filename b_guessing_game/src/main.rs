@@ -1,6 +1,6 @@
-use std::io;
 use rand::Rng;
 use std::cmp::Ordering;
+use std::io;
 
 fn main() {
     println!("Guset the number!");
@@ -11,7 +11,7 @@ fn main() {
 
     loop {
         // create mutable variable
-        let mut guess =  String::new();
+        let mut guess = String::new();
 
         // catch the user input
         io::stdin()
@@ -20,17 +20,18 @@ fn main() {
 
         println!("Your guessed {}", guess);
 
-        let guess:u32 = match guess.trim().parse(){
+        let guess: u32 = match guess.trim().parse() {
             Ok(num) => num,
             Err(_) => continue,
         };
 
-        match guess.cmp(&secret_number){ // arm
+        match guess.cmp(&secret_number) {
+            // arm
             Ordering::Less => println!("To small !!"),
             Ordering::Greater => println!("To big !!"),
             Ordering::Equal => {
                 println!("You winn !!");
-                break
+                break;
             }
         }
     }
