@@ -1,3 +1,8 @@
 [workspace]
-members = ["a_common_concepts/a_variable", "a_common_concepts/b_data_types", "b_guessing_game"]
+members = [
+    "a_common_concepts/a_variable",
+    "a_common_concepts/b_data_types",
+    "a_common_concepts/c_function",
+    "b_guessing_game"
+]
 resolver = "1"
