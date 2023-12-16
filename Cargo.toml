@@ -3,6 +3,7 @@ members = [
     "a_common_concepts/a_variable",
     "a_common_concepts/b_data_types",
     "a_common_concepts/c_function",
+    "a_common_concepts/d_control_flow",
     "b_guessing_game"
 ]
 resolver = "1"
