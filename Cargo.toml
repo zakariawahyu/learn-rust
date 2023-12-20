@@ -4,6 +4,9 @@ members = [
     "a_common_concepts/b_data_types",
     "a_common_concepts/c_function",
     "a_common_concepts/d_control_flow",
-    "b_guessing_game"
+    "b_guessing_game",
+    "c_ownership/a_about_ownership",
+    "c_ownership/b_references_and_borrowing",
+    "c_ownership/c_slice_type"
 ]
 resolver = "1"
