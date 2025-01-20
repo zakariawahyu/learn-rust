@@ -8,6 +8,5 @@ members = [
     "c_ownership/a_about_ownership",
     "c_ownership/b_references_and_borrowing",
     "c_ownership/c_slice_type",
-    "pzn"
 ]
 resolver = "2"
