@@ -32,6 +32,8 @@ struct Car {
     brand: String,
     model: String,
 }
+#[derive(Debug)]
+struct StructOne;
 
 fn main() {
     let user_one = User {
@@ -85,6 +87,10 @@ fn main() {
     struct Color(i32, i32, i32, bool);
     let red = Color(255, 0, 0, true);
     println!("{:?} {:?} {:?} {:?}", red.0, red.1, red.2, red.3);
+
+    // Unit-like structs adalah struct yang didefinisikan tanpa property
+    let data_one = StructOne;
+    println!("{:#?}", data_one);
 
     // property visibility
     let ps5 = models::games::GamingConsole{

@@ -8,5 +8,7 @@ members = [
     "c_ownership/a_about_ownership",
     "c_ownership/b_references_and_borrowing",
     "c_ownership/c_slice_type",
-]
+    "d_struct/a_about_struct",
+    "d_struct/b_example_struct",
+    "d_struct/c_method"]
 resolver = "2"

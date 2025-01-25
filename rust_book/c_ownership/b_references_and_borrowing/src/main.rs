@@ -65,7 +65,18 @@ fn borrowing() {
     let s5 = &mut c;
     // let s6 = &c;
     println!("s5 : {}", s5);
+
+    // let reference_to_dangle  =  dangle();
+    // println!("reference_to_dangle : {}", reference_to_dangle);
 }
+
+// kasus seperti ini akan di handle nanti dalam rust lifetime
+// fn dangle() -> &String {
+    // variabel s akan valid dalam scop dangle ini, karena s berasal dari dalam function ini
+    // let s = String::from("reference from dengle");
+    // &s
+    // jika dikeluarkan maka tidak akan valid lagi
+// }
 
 fn main() {
     println!("==== Pointer and Reference ====");

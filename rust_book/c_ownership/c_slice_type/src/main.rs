@@ -11,7 +11,26 @@
         - start_index..             = slicing data dari start_index hingga indeks terakhir
         - ...                       = slicing semua data
 */
+
+fn first_word(s: &String) -> &str {
+    // convert string menjadi array
+    let bytes = s.as_bytes();
+    for (index, &item) in bytes.iter().enumerate(){
+        // akan berhenti jika spasi di temukan
+        if item == b' '{
+            return &s[0..index];
+        }
+    }
+
+    &s[..]
+}
+
 fn main() {
+    let sample = String::from("hello world");
+    let word = first_word(&sample);
+
+    println!("first word: {}", word); // tetap akan return 5 walaupun string di kosongkan
+
     let mut numbers = [3, 12, 55, 4];
     println!("numbers     : {:?}, len : {:?}", numbers, numbers.len());
     println!("numbers[0]  : {:?}", numbers[0]);
