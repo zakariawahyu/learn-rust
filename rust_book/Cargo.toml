@@ -10,5 +10,7 @@ members = [
     "c_ownership/c_slice_type",
     "d_struct/a_about_struct",
     "d_struct/b_example_struct",
-    "d_struct/c_method"]
+    "d_struct/c_associated_function",
+    "d_struct/d_method"
+]
 resolver = "2"

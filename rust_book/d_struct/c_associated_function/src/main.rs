@@ -1,3 +1,5 @@
+mod movie;
+mod color;
 /*
     Associated function
     - Associated item adalah item yang memiliki asosiasi/hubungan dengan struct. Item disini bisa banyak hal, berupa fungsi atau lainnya
@@ -40,4 +42,15 @@ fn main() {
 
     let self_lego_set : LegoSet = LegoSet::new(2, String::from("Lego Self"), String::from("B"), 30);
     println!("{:#?}", self_lego_set);
+
+    let movie : movie::Movie = movie::Movie::new(String::from("Star War"), String::from("Movie"), 4.3);
+    println!("{:#?}", movie);
+
+    let red = color::Color::red();
+    let green: color::Color = color::Color::green();
+    let blue: color::Color = color::Color::blue();
+    println!("{:#?} {:#?} {:#?}", red, green, blue);
+
+    let random_color = color::Color(12, 54, 43);
+    println!("{:#?}", random_color);
 }

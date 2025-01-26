@@ -1,5 +1,5 @@
 [package]
-name = "c_method"
+name = "c_associated_function"
 version = "0.1.0"
 edition = "2021"
 
