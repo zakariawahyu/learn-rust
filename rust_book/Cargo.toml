@@ -12,6 +12,7 @@ members = [
     "d_struct/b_example_struct",
     "d_struct/c_associated_function",
     "d_struct/d_method",
-    "e_enum_and_pattern/a_about_enum"
+    "e_enum_and_pattern/a_about_enum",
+    "e_enum_and_pattern/b_pattern_matching"
 ]
 resolver = "2"
