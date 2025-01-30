@@ -14,6 +14,8 @@ members = [
     "d_struct/d_method",
     "e_enum_and_pattern/a_about_enum",
     "e_enum_and_pattern/b_pattern_matching",
-    "f_package_crates_modules/a_package_crates"
+    "f_package_crates_modules/a_package_crates",
+    "f_package_crates_modules/b_modules"
 ]
+
 resolver = "2"
