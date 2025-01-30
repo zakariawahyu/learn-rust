@@ -110,6 +110,11 @@ pub fn for_repetition(){
         println!("Perulangan j ke {j}")
     }
 
+    // .rev untuk reverse perulangan
+    for j in (0..=4).rev() {
+        println!("Perulangan j ke {j}")
+    }
+
     //label perulangan, sama seperti loop cukup menambahkan 'NamaLabel
     'forx: for x in 0..=5 {
         if x == 2 {
