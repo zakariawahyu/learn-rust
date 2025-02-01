@@ -17,6 +17,7 @@ members = [
     "f_package_crates_modules/a_package_crates",
     "f_package_crates_modules/b_modules",
     "f_package_crates_modules/c_inline_modules",
+    "f_package_crates_modules/d_scope_modules"
 ]
 
 resolver = "2"
