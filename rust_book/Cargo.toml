@@ -19,7 +19,8 @@ members = [
     "f_package_crates_modules/c_inline_modules",
     "f_package_crates_modules/d_scope_modules",
     "f_package_crates_modules/e_visibility_and_privacy",
-    "g_common_collections/a_vector"
+    "g_common_collections/a_vector",
+    "g_common_collections/b_string"
 ]
 
 resolver = "2"
