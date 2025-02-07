@@ -9,6 +9,13 @@ use std::collections::VecDeque;
 
  */
 
+#[derive(Debug)]
+enum SpreadsheetCell {
+    Int(i32),
+    Float(f64),
+    Text(String),
+}
+
 fn main() {
     // membuat vector dengan macro vec
     let mut data_one = vec!["one", "two", "three"];
@@ -41,6 +48,14 @@ fn main() {
     // notasi [i] digunakan untuk modifikasi nilai elemen
     data_one[3] = "four";
     println!("new push data: {:?}", data_one);
+    // bisa juga digunakan untuk mengakses elemen
+    println!("data index 0 {:?}", data_one[0]);
+    // atau akses menggunakan method get serta error handlingnya
+    let get_data_one = data_one.get(1);
+    match get_data_one {
+        Some(get_data_one) => println!("Index 1 in data one is : {:?}", get_data_one),
+        None => println!("No data in index 1"),
+    }
 
     // method .is_empty() digunakan untuk mengecek apakah vector kosong atau tidak
     let check_empty = data_one.is_empty();
@@ -94,6 +109,14 @@ fn main() {
     let vec_population = vec![3, 2, 1];
     let vec_population_slice = &vec_population[1..2];
     println!("vector slice : {:?}", vec_population_slice);
+
+    // bisa juga membuat vector dengan enum sepererti ini
+    let row = vec![
+        SpreadsheetCell::Int(3),
+        SpreadsheetCell::Text(String::from("blue")),
+        SpreadsheetCell::Float(10.12),
+    ];
+    println!("SpradshetCell {:?}", row)
 }
 
 /*
