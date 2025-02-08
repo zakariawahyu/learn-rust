@@ -23,7 +23,8 @@ members = [
     "g_common_collections/b_string",
     "g_common_collections/c_hash_map",
     "h_error_handling/a_unrecoverable",
-    "h_error_handling/b_recoverable"
+    "h_error_handling/b_recoverable",
+    "h_error_handling/c_example"
 ]
 
 resolver = "2"
