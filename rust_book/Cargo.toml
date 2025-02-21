@@ -27,7 +27,8 @@ members = [
     "h_error_handling/c_example",
     "i_generic_traits_lifetimes/a_generic",
     "i_generic_traits_lifetimes/b_traits",
-    "i_generic_traits_lifetimes/c_lifetimes"
+    "i_generic_traits_lifetimes/c_lifetimes",
+    "i_generic_traits_lifetimes/d_lifetimes_basic"
 ]
 
 resolver = "2"
